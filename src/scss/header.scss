@@ -12,7 +12,7 @@ header {
     .menu {
       @extend %gap-16;
       .logo {
-        @extend %h-style;
+        @include h-style;
         @extend %gap-16;
         flex-wrap: nowrap;
         margin-right: 72px;
@@ -39,7 +39,7 @@ header {
         @include gap-24;
     
         a{
-          @extend %h-style;
+          @include h-style;
           @extend %reset-a;
         }
 

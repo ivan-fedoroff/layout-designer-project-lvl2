@@ -1,0 +1,44 @@
+.pricing-item {
+  width: calc((100% - 100px) / 3);
+  box-sizing: border-box;
+  padding: 1.5rem;
+  border-radius: 1rem;
+
+  @media (max-width: 830px) {
+    width: 50%;
+  }
+
+  @media (max-width: 520px) {
+    width: 100%;
+  }
+
+  h3 {
+    @include reset;
+    margin-bottom: 200px;
+  }
+
+  .pricing-value {
+    margin-bottom: 24px;
+    line-height: 1em;
+    @extend .text-7;
+
+    span {
+      vertical-align: super;
+      @include uppercase;
+    }
+  }
+
+  a {
+    display: block;
+    @extend %reset-a;
+    @include full-width;
+    border: 1px solid #fff;
+    @include uppercase;
+  }
+
+  .pricing-footer {
+    margin-top: 64px;
+    margin-bottom: 42px;
+    @extend .text-small;
+  }
+}

@@ -1,0 +1,35 @@
+#page-pricing {
+  @extend %top-100;
+  text-align: center;
+
+  h2 {
+    @include reset;
+  }
+
+  .prices {
+    gap: 50px;
+    margin-top: 49px;
+    margin-bottom: 40px;
+
+    .bg-free {
+      background-image: url('../images/subscribe_1.png');
+      background-position: center;
+      background-size: cover;
+    }
+
+    .bg-standart {
+      background-image: url('../images/subscribe_2.png');
+      background-position: center;
+      background-size: cover;
+    }
+
+    .bg-premium {
+      background-image: url('../images/subscribe_3.png');
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  .info {
+    @include reset;
+  }
+}

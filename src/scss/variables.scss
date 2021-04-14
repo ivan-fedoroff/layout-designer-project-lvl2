@@ -33,7 +33,7 @@ body {
   text-transform: uppercase;
 }
 
-%h-style {
+@mixin h-style {
   font-family: 'Roboto-Bold';
   @include uppercase;
 }
@@ -46,13 +46,13 @@ body {
 h1 {
   font-size: 60px;
   line-height: 90px;
-  @extend %h-style;
+  @include h-style;
 }
 
 h2 {
   font-size: 38px;
   line-height: 57px;
-  @extend %h-style;
+  @include h-style;
 }
 
 @media (max-width: 830px) {
@@ -65,6 +65,34 @@ h2 {
     font-size: 18px;
     line-height: 27px;
   }
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 45px;
+  @include uppercase;
+
+  @media (max-width: 830px) {
+    font-size: 16px;
+    line-height: 24px;
+    @include h-style;
+  }
+}
+
+.text-small {
+  font-size: 12.8px;
+}
+
+.text-3 {
+  font-size: 32px;
+}
+
+.text-7 {
+  font-size: 64px;
+}
+
+.white-text {
+  color: #fff;
 }
 
 .transparent-bgd{

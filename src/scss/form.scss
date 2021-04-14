@@ -12,7 +12,6 @@ form {
     padding-left: 20px;
     border: 2px solid $dark-gray;
     border-radius: 3px;
-    color: #fff;
     font: 14px/16px 'Roboto-Bold', sans-serif;
 
     @media (max-width: 520px) {
@@ -22,9 +21,8 @@ form {
 
   button {
     grid-column: span 2;
-    color: #fff;
     font: 13.3px/15px Arial, sans-serif;
-    text-transform: uppercase;
+    @include uppercase;
     background: $green;
   }
 }

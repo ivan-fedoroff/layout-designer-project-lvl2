@@ -16,12 +16,7 @@ body {
   background: #08020d;
 }
 
-header .hat .menu nav a, header .hat .menu .logo, h2, h1 {
-  font-family: "Roboto-Bold";
-  text-transform: uppercase;
-}
-
-header .hat .menu nav a {
+.pricing-item a, header .hat .menu nav a {
   text-decoration: none;
   color: inherit;
 }
@@ -29,11 +24,15 @@ header .hat .menu nav a {
 h1 {
   font-size: 60px;
   line-height: 90px;
+  font-family: "Roboto-Bold";
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: 38px;
   line-height: 57px;
+  font-family: "Roboto-Bold";
+  text-transform: uppercase;
 }
 
 @media (max-width: 830px) {
@@ -47,11 +46,45 @@ h2 {
     line-height: 27px;
   }
 }
+h3 {
+  font-size: 24px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+@media (max-width: 830px) {
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Roboto-Bold";
+    text-transform: uppercase;
+  }
+}
+
+.text-small, .pricing-item .pricing-footer {
+  font-size: 12.8px;
+}
+
+.text-3 {
+  font-size: 32px;
+}
+
+.text-7, .pricing-item .pricing-value {
+  font-size: 64px;
+}
+
+.white-text {
+  color: #fff;
+}
+
 .transparent-bgd {
   background: transparent;
 }
 .transparent-bgd::placeholder {
   color: #fff;
+}
+
+#page-pricing {
+  padding-top: 100px;
 }
 
 header .conteiner,
@@ -79,7 +112,8 @@ body {
 header,
 section,
 footer {
-  padding: 0 auto;
+  padding-left: auto;
+  padding-right: auto;
 }
 @media (max-width: 1240px) {
   header,
@@ -141,6 +175,8 @@ header .hat {
   line-height: 13px;
 }
 header .hat .menu .logo {
+  font-family: "Roboto-Bold";
+  text-transform: uppercase;
   flex-wrap: nowrap;
   margin-right: 72px;
 }
@@ -165,6 +201,10 @@ header .hat .menu .logo p {
 }
 header .hat .menu nav {
   gap: 24px;
+}
+header .hat .menu nav a {
+  font-family: "Roboto-Bold";
+  text-transform: uppercase;
 }
 @media (max-width: 520px) {
   header .hat .menu nav {
@@ -204,7 +244,6 @@ header .hat input::placeholder {
 #page-description .banner {
   text-align: center;
   padding: 200px 0;
-  color: #fff;
 }
 #page-description .banner h1, #page-description .banner h2 {
   margin: 0;
@@ -235,7 +274,6 @@ form input {
   padding-left: 20px;
   border: 2px solid #cacaca;
   border-radius: 3px;
-  color: #fff;
   font: 14px/16px "Roboto-Bold", sans-serif;
 }
 @media (max-width: 520px) {
@@ -245,10 +283,84 @@ form input {
 }
 form button {
   grid-column: span 2;
-  color: #fff;
   font: 13.3px/15px Arial, sans-serif;
   text-transform: uppercase;
   background: #34c176;
+}
+
+#page-pricing {
+  text-align: center;
+}
+#page-pricing h2 {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#page-pricing .prices {
+  gap: 50px;
+  margin-top: 49px;
+  margin-bottom: 40px;
+}
+#page-pricing .prices .bg-free {
+  background-image: url("../images/subscribe_1.png");
+  background-position: center;
+  background-size: cover;
+}
+#page-pricing .prices .bg-standart {
+  background-image: url("../images/subscribe_2.png");
+  background-position: center;
+  background-size: cover;
+}
+#page-pricing .prices .bg-premium {
+  background-image: url("../images/subscribe_3.png");
+  background-position: center;
+  background-size: cover;
+}
+#page-pricing .info {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.pricing-item {
+  width: calc((100% - 100px) / 3);
+  box-sizing: border-box;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+@media (max-width: 830px) {
+  .pricing-item {
+    width: 50%;
+  }
+}
+@media (max-width: 520px) {
+  .pricing-item {
+    width: 100%;
+  }
+}
+.pricing-item h3 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-bottom: 200px;
+}
+.pricing-item .pricing-value {
+  margin-bottom: 24px;
+  line-height: 1em;
+}
+.pricing-item .pricing-value span {
+  vertical-align: super;
+  text-transform: uppercase;
+}
+.pricing-item a {
+  display: block;
+  width: 100%;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+}
+.pricing-item .pricing-footer {
+  margin-top: 64px;
+  margin-bottom: 42px;
 }
 
 /*# sourceMappingURL=style.css.map */
