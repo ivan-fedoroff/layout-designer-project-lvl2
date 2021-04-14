@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+body {
+  font: 16px/1.5 "Roboto", sans-serif;
+  color: #cacaca;
+  background: #08020d;
+}
+
+header .hat .menu nav a, header .hat .menu .logo, h2, h1 {
+  font-family: "Roboto-Bold";
+  text-transform: uppercase;
+}
+
+header .hat .menu nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 90px;
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 57px;
+}
+
+@media (max-width: 830px) {
+  h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.transparent-bgd {
+  background: transparent;
+}
+.transparent-bgd::placeholder {
+  color: #fff;
+}
+
+header .conteiner,
+section .conteiner,
+footer .conteiner {
+  width: 1200px;
+}
+
+form, header .conteiner,
+section .conteiner,
+footer .conteiner {
+  margin: 0 auto;
+}
+
+header .hat .menu .logo, header .hat .menu, header .hat {
+  gap: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+header,
+section,
+footer {
+  padding: 0 auto;
+}
+@media (max-width: 1240px) {
+  header,
+section,
+footer {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  header .conteiner,
+section .conteiner,
+footer .conteiner {
+    width: 100%;
+  }
+}
+@media (max-width: 520px) {
+  header,
+section,
+footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.flex {
+  display: flex;
+}
+.flex.justify-content-between {
+  justify-content: space-between;
+}
+.flex.align-items-center {
+  align-items: center;
+}
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+header {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+}
+header .hat {
+  font-size: 11px;
+  line-height: 13px;
+}
+header .hat .menu .logo {
+  flex-wrap: nowrap;
+  margin-right: 72px;
+}
+header .hat .menu .logo img {
+  height: 24px;
+  width: 24px;
+}
+header .hat .menu .logo p {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+@media (max-width: 830px) {
+  header .hat .menu .logo {
+    margin-right: 0;
+  }
+}
+@media (max-width: 830px) {
+  header .hat .menu {
+    width: 100%;
+  }
+}
+header .hat .menu nav {
+  gap: 24px;
+}
+@media (max-width: 520px) {
+  header .hat .menu nav {
+    gap: 0;
+    width: 100%;
+  }
+  header .hat .menu nav a {
+    margin-right: 50%;
+  }
+}
+header .hat input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 248px;
+  height: 25px;
+  padding: 5px 10px;
+  background: #3c3b3d;
+  border-radius: 50px;
+}
+@media (max-width: 830px) {
+  header .hat input {
+    width: 100%;
+  }
+}
+header .hat input::placeholder {
+  font: 13, 3px/15px Arial, sans-serif;
+  text-transform: uppercase;
+  color: #757575;
+}
+
+#page-description {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+#page-description .banner {
+  text-align: center;
+  padding: 200px 0;
+  color: #fff;
+}
+#page-description .banner h1, #page-description .banner h2 {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#page-description .banner p {
+  margin-top: 32px;
+}
+@media (max-width: 520px) {
+  #page-description .banner p {
+    margin-top: auto;
+  }
+}
+
+form {
+  max-width: 570px;
+  gap: 24px;
+}
+form input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  grid-column: span 1;
+  box-sizing: border-box;
+  height: 50px;
+  min-width: 270px;
+  padding-left: 20px;
+  border: 2px solid #cacaca;
+  border-radius: 3px;
+  color: #fff;
+  font: 14px/16px "Roboto-Bold", sans-serif;
+}
+@media (max-width: 520px) {
+  form input {
+    grid-column: span 2;
+  }
+}
+form button {
+  grid-column: span 2;
+  color: #fff;
+  font: 13.3px/15px Arial, sans-serif;
+  text-transform: uppercase;
+  background: #34c176;
+}
+
+/*# sourceMappingURL=style.css.map */

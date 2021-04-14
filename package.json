@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "htmlhint": "^0.14.2",
+    "stylelint": "^13.12.0",
+    "surge": "^0.23.0"
+  }
+}

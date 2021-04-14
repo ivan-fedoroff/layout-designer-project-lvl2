@@ -1,0 +1,30 @@
+form {
+  max-width: 570px;
+  @include gap-24;
+  @extend %centred;
+
+  input {
+    @include reset;
+    grid-column: span 1;
+    box-sizing: border-box;
+    height: 50px;
+    min-width: 270px;
+    padding-left: 20px;
+    border: 2px solid $dark-gray;
+    border-radius: 3px;
+    color: #fff;
+    font: 14px/16px 'Roboto-Bold', sans-serif;
+
+    @media (max-width: 520px) {
+      grid-column: span 2;
+    }
+  }
+
+  button {
+    grid-column: span 2;
+    color: #fff;
+    font: 13.3px/15px Arial, sans-serif;
+    text-transform: uppercase;
+    background: $green;
+  }
+}

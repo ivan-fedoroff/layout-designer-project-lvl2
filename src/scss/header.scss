@@ -1,0 +1,78 @@
+header {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+
+  .hat {
+    font-size: 11px;
+    line-height: 13px;
+    @extend %gap-16;
+
+    .menu {
+      @extend %gap-16;
+      .logo {
+        @extend %h-style;
+        @extend %gap-16;
+        flex-wrap: nowrap;
+        margin-right: 72px;
+    
+        img {
+          height: 24px;
+          width: 24px;
+        }
+    
+        p {
+          @include reset;
+        }
+
+        @media (max-width: 830px) {
+          margin-right: 0;
+        }
+      }
+
+      @media (max-width: 830px) {
+        @include full-width;
+      }
+
+      nav {
+        @include gap-24;
+    
+        a{
+          @extend %h-style;
+          @extend %reset-a;
+        }
+
+        @media (max-width: 520px) {
+          @include no-gap;
+          @include full-width;
+
+          a{
+            margin-right: 50%;
+          }
+        }
+      }
+    }
+
+    input {
+      @include reset;
+      width: 248px;
+      height: 25px;
+      padding: 5px 10px;
+  
+      background: $dark;
+  
+      border-radius: 50px;
+
+      @media (max-width: 830px) {
+        @include full-width;
+      }
+  
+      &::placeholder {
+        font: 13,3px/15px Arial, sans-serif;
+        @include uppercase;
+        color: #757575;
+      }
+    }
+  }
+}
