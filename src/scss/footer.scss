@@ -1,0 +1,52 @@
+.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+footer {
+  a {
+    @extend %reset-a;
+    display: block;
+  }
+}
+
+.first-foot {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  .footer-1 {
+    height: 150px;
+    text-align: left;
+    column-count: 4;
+  
+    .column {
+      column-width: 310px;
+      break-inside: avoid;
+  
+      h2 {
+        font: 18px/27px 'Roboto-bold', sans-serif;
+        @include uppercase;
+        margin-bottom: 16px;
+      }
+    }
+  
+    .last-clmn {
+      column-width: 240px;
+  
+      .soc-net-link {
+        @include gap-24;
+      }
+    }
+  }
+}
+
+.last-foot {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid $gray;
+
+  .footer-2 {
+    text-align: left;
+    gap: 15px;
+  }
+}
+

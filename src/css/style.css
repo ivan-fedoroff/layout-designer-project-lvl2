@@ -16,7 +16,7 @@ body {
   background: #08020d;
 }
 
-.pricing-item a, header .hat .menu nav a {
+footer a, .pricing-item a, header .hat .menu nav a {
   text-decoration: none;
   color: inherit;
 }
@@ -469,6 +469,49 @@ form button {
   padding: 16px 40px;
   border-radius: 32px;
   background: #95390c;
+}
+
+.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+footer a {
+  display: block;
+}
+
+.first-foot {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.first-foot .footer-1 {
+  height: 150px;
+  text-align: left;
+  column-count: 4;
+}
+.first-foot .footer-1 .column {
+  column-width: 310px;
+  break-inside: avoid;
+}
+.first-foot .footer-1 .column h2 {
+  font: 18px/27px "Roboto-bold", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.first-foot .footer-1 .last-clmn {
+  column-width: 240px;
+}
+.first-foot .footer-1 .last-clmn .soc-net-link {
+  gap: 24px;
+}
+
+.last-foot {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+.last-foot .footer-2 {
+  text-align: left;
+  gap: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
