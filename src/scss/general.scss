@@ -40,6 +40,10 @@
   gap: 16px;
 }
 
+@mixin gap-16 {
+  gap: 16px;
+}
+
 @mixin gap-24 {
   gap: 24px;
 }
