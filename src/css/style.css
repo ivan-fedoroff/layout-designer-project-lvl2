@@ -96,7 +96,8 @@ h3 {
   background: #95390c;
 }
 
-#page-discography, #page-popular-track, #page-app, #page-news, #page-pricing {
+#page-discography,
+#page-similar, #page-popular-track, #page-app, #page-news, #page-pricing {
   padding-top: 100px;
 }
 
@@ -605,6 +606,10 @@ footer a {
   text-transform: capitalize;
 }
 
+#page-similar {
+  margin-bottom: 100px;
+}
+
 .cards {
   margin-top: 3rem;
 }
@@ -628,6 +633,16 @@ footer a {
   margin: 0;
   padding: 0;
   border: none;
+}
+
+.artists {
+  text-align: center;
+  width: 250px;
+}
+@media (max-width: 830px) {
+  .artists {
+    width: 137px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
