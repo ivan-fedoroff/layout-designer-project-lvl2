@@ -1,0 +1,39 @@
+#page-popular-track {
+  @extend %top-100;
+}
+
+.tracks {
+  @include gap-50;
+  @include row-gap-25;
+  column-width: calc((100%-50px) / 2);
+  margin-top: 3rem;
+
+  @media (max-width: 520px) {
+    width: 100%;
+  }
+}
+
+.popular-track {
+  grid-column: span 1;
+  gap: 15px;
+
+  img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .track-info {
+    width: 100%;
+
+    h3 {
+      font: 12.8px/19.2px 'Roboto-Bold';
+    }
+  
+    p {
+      @include reset;
+      text-transform: capitalize;
+    }
+  }
+
+
+}
