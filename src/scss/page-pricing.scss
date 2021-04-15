@@ -1,13 +1,8 @@
 #page-pricing {
   @extend %top-100;
-  text-align: center;
-
-  h2 {
-    @include reset;
-  }
 
   .prices {
-    gap: 50px;
+    @include gap-50;
     margin-top: 49px;
     margin-bottom: 40px;
 

@@ -16,11 +16,11 @@
   width: 100%;
 }
 
-%column-gap-50 {
-  column-gap: 50px;
+@mixin gap-50 {
+  gap: 50px;
 }
 
-%column-row-25 {
+@mixin row-gap-25 {
   row-gap: 25px;
 }
 
@@ -29,6 +29,10 @@
 }
 
 %centred {
+  margin: 0 auto;
+}
+
+@mixin centred {
   margin: 0 auto;
 }
 
@@ -63,6 +67,12 @@ footer {
   .conteiner {
     @extend %width-1200;
     @extend %centred;
+  }
+}
+
+section {
+  .conteiner {
+    text-align: center;
   }
 }
 
@@ -113,4 +123,8 @@ footer {
   box-sizing: border-box;
   padding: 20px 30px;
   border-radius: 5px;
+}
+
+h1, h2, h3 {
+  @include reset;
 }

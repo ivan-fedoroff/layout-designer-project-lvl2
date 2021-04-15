@@ -4,12 +4,9 @@
   background-size: cover;
 
   .banner {
-    text-align: center;
     padding: 200px 0;
   
-    h1, h2 {
-      @include reset;
-    }
+    
   
     p {
       margin-top: 32px;

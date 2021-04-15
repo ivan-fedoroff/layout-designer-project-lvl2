@@ -27,6 +27,12 @@ h1 {
   font-family: "Roboto-Bold";
   text-transform: uppercase;
 }
+@media (max-width: 830px) {
+  h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
 
 h2 {
   font-size: 38px;
@@ -34,21 +40,15 @@ h2 {
   font-family: "Roboto-Bold";
   text-transform: uppercase;
 }
-
 @media (max-width: 830px) {
-  h1 {
-    font-size: 30px;
-    line-height: 45px;
-  }
-
   h2 {
     font-size: 18px;
     line-height: 27px;
   }
 }
+
 h3 {
-  font-size: 24px;
-  line-height: 45px;
+  font: 24px/45px "Roboto", sans-serif;
   text-transform: uppercase;
 }
 @media (max-width: 830px) {
@@ -83,7 +83,12 @@ h3 {
   color: #fff;
 }
 
-#page-pricing {
+.orange {
+  color: #f89202;
+  text-transform: uppercase;
+}
+
+#page-news, #page-pricing {
   padding-top: 100px;
 }
 
@@ -99,7 +104,7 @@ footer .conteiner {
   margin: 0 auto;
 }
 
-header .hat .menu .logo, header .hat .menu, header .hat {
+.news article .author, header .hat .menu .logo, header .hat .menu, header .hat {
   gap: 16px;
 }
 
@@ -115,6 +120,10 @@ footer {
   padding-left: auto;
   padding-right: auto;
 }
+section .conteiner {
+  text-align: center;
+}
+
 @media (max-width: 1240px) {
   header,
 section,
@@ -162,6 +171,12 @@ footer {
   box-sizing: border-box;
   padding: 20px 30px;
   border-radius: 5px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 header {
@@ -242,13 +257,7 @@ header .hat input::placeholder {
   background-size: cover;
 }
 #page-description .banner {
-  text-align: center;
   padding: 200px 0;
-}
-#page-description .banner h1, #page-description .banner h2 {
-  margin: 0;
-  padding: 0;
-  border: none;
 }
 #page-description .banner p {
   margin-top: 32px;
@@ -288,14 +297,6 @@ form button {
   background: #34c176;
 }
 
-#page-pricing {
-  text-align: center;
-}
-#page-pricing h2 {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
 #page-pricing .prices {
   gap: 50px;
   margin-top: 49px;
@@ -331,6 +332,7 @@ form button {
 @media (max-width: 830px) {
   .pricing-item {
     width: 50%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 520px) {
@@ -339,9 +341,6 @@ form button {
   }
 }
 .pricing-item h3 {
-  margin: 0;
-  padding: 0;
-  border: none;
   margin-bottom: 200px;
 }
 .pricing-item .pricing-value {
@@ -354,13 +353,78 @@ form button {
 }
 .pricing-item a {
   display: block;
-  width: 100%;
   border: 1px solid #fff;
   text-transform: uppercase;
+  width: 100%;
 }
 .pricing-item .pricing-footer {
   margin-top: 64px;
   margin-bottom: 42px;
+}
+
+#page-news .first {
+  margin-top: 48px;
+  margin-bottom: 65px;
+}
+#page-news .second {
+  flex-direction: row-reverse;
+}
+
+.news {
+  gap: 50px;
+}
+.news .picture {
+  width: 575px;
+}
+@media (max-width: 1240px) {
+  .news .picture {
+    width: 50%;
+  }
+}
+@media (max-width: 830px) {
+  .news .picture {
+    width: 575px;
+  }
+}
+@media (max-width: 520px) {
+  .news .picture {
+    width: 100%;
+  }
+}
+.news .picture img {
+  width: 100%;
+}
+.news article {
+  width: calc(100% - 575px - 50px);
+  text-align: left;
+}
+@media (max-width: 1240px) {
+  .news article {
+    width: calc(50% - 50px);
+  }
+}
+@media (max-width: 830px) {
+  .news article {
+    width: 575px;
+  }
+}
+.news article h3 {
+  text-transform: capitalize;
+}
+.news article > p {
+  margin-top: 30px;
+}
+.news article .author {
+  margin-bottom: 32px;
+  width: fit-content;
+}
+.news article .author img {
+  height: 19px;
+  width: 19px;
+}
+.news article button {
+  border: 1px solid #fff;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */

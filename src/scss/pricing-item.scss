@@ -6,6 +6,7 @@
 
   @media (max-width: 830px) {
     width: 50%;
+    @include centred;
   }
 
   @media (max-width: 520px) {
@@ -13,7 +14,6 @@
   }
 
   h3 {
-    @include reset;
     margin-bottom: 200px;
   }
 
@@ -31,9 +31,8 @@
   a {
     display: block;
     @extend %reset-a;
+    @include border-1;
     @include full-width;
-    border: 1px solid #fff;
-    @include uppercase;
   }
 
   .pricing-footer {
