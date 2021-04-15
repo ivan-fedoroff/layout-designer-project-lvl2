@@ -96,7 +96,7 @@ h3 {
   background: #95390c;
 }
 
-#page-popular-track, #page-app, #page-news, #page-pricing {
+#page-discography, #page-popular-track, #page-app, #page-news, #page-pricing {
   padding-top: 100px;
 }
 
@@ -194,8 +194,25 @@ h1, h2, h3 {
 }
 @media (max-width: 520px) {
   .grid-2-3 {
-    grid-template-rows: repeat(auto-fit, 1fr);
     grid-template-columns: 1fr;
+  }
+}
+
+.grid-4-2 {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  row-gap: 25px;
+}
+@media (max-width: 1240px) {
+  .grid-4-2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 520px) {
+  .grid-4-2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -586,6 +603,31 @@ footer a {
   padding: 0;
   border: none;
   text-transform: capitalize;
+}
+
+.cards {
+  margin-top: 3rem;
+}
+
+.card img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 15px;
+}
+@media (max-width: 830px) {
+  .card img {
+    width: 137px;
+    height: 137px;
+  }
+}
+.card h3 {
+  font: 18px/27px "Roboto-Bold", sans-serif;
+  text-transform: capitalize;
+}
+.card p {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
