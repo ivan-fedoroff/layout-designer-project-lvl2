@@ -37,11 +37,9 @@
         }
       }
 
-      .red-btn {
+      .btn-ellipse {
         padding: 16px 40px;
         border-radius: 32px;
-        background: $red;
-        @extend .text-small;
       }
     }
   }

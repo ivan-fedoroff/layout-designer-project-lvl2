@@ -1,17 +1,15 @@
-#page-description {
+.banner {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-image: url('../images/banner.png');
   background-position: center;
   background-size: cover;
 
-  .banner {
-    padding: 200px 0;
-  
-    p {
-      margin-top: 32px;
+  p {
+    margin-top: 32px;
 
-      @media (max-width: 520px) {
-        margin-top: auto;
-      }
+    @media (max-width: 520px) {
+    margin-top: auto;
     }
   }
 }

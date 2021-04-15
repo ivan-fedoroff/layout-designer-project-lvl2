@@ -113,3 +113,8 @@ h3 {
 .btn {
   cursor: pointer;
 }
+
+.btn-red {
+  background: $red;
+  @extend .text-small;
+}
