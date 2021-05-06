@@ -5,8 +5,9 @@
 .tracks {
   @include gap-50;
   @include row-gap-25;
-  column-width: calc((100%-50px) / 2);
   margin-top: 3rem;
+
+  column-width: calc((100% - 50px) / 2);
 
   @media (max-width: 520px) {
     width: 100%;
@@ -26,14 +27,12 @@
     width: 100%;
 
     h3 {
-      font: 12.8px/19.2px 'Roboto-Bold';
+      font: 12.8px/19.2px 'Roboto-Bold', sans-serif;
     }
-  
+
     p {
       @include reset;
       text-transform: capitalize;
     }
   }
-
-
 }

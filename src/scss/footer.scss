@@ -15,22 +15,25 @@ footer {
 
   .footer-1 {
     height: 150px;
+
     column-count: 4;
-  
+
     .column {
       column-width: 310px;
       break-inside: avoid;
-  
+
       h2 {
-        font: 18px/27px 'Roboto-bold', sans-serif;
-        @include uppercase;
         margin-bottom: 16px;
+
+        font: 18px/27px 'Roboto-bold', sans-serif;
+
+        @include uppercase;
       }
     }
-  
+
     .last-clmn {
       column-width: 240px;
-  
+
       .soc-net-link {
         @include gap-24;
       }
@@ -41,10 +44,10 @@ footer {
 .last-foot {
   padding-top: 2rem;
   padding-bottom: 2rem;
+
   border-top: 1px solid $gray;
 
   .footer-2 {
     gap: 15px;
   }
 }
-

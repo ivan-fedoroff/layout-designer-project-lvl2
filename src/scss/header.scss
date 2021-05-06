@@ -1,27 +1,30 @@
 header {
   position: absolute;
   top: 25px;
-  left: 0;
   right: 0;
+  left: 0;
 
   .hat {
     font-size: 11px;
     line-height: 13px;
+
     @extend %gap-16;
 
     .menu {
       @extend %gap-16;
+
       .logo {
         @include h-style;
+
         @extend %gap-16;
         flex-wrap: nowrap;
         margin-right: 72px;
-    
+
         img {
-          height: 24px;
           width: 24px;
+          height: 24px;
         }
-    
+
         p {
           @include reset;
         }
@@ -37,9 +40,10 @@ header {
 
       nav {
         @include gap-24;
-    
-        a{
+
+        a {
           @include h-style;
+
           @extend %reset-a;
         }
 
@@ -47,7 +51,7 @@ header {
           @include no-gap;
           @include full-width;
 
-          a{
+          a {
             margin-right: 50%;
           }
         }
@@ -59,19 +63,20 @@ header {
       width: 248px;
       height: 25px;
       padding: 5px 10px;
-  
+
       background: $dark;
-  
+
       border-radius: 50px;
 
       @media (max-width: 830px) {
         @include full-width;
       }
-  
+
       &::placeholder {
-        font: 13,3px/15px Arial, sans-serif;
-        @include uppercase;
         color: #757575;
+        font: 13, 3px/15px Arial, sans-serif;
+
+        @include uppercase;
       }
     }
   }

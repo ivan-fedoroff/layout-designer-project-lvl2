@@ -1,6 +1,7 @@
 .banner {
   padding-top: 200px;
   padding-bottom: 200px;
+
   background-image: url('../images/banner.png');
   background-position: center;
   background-size: cover;
@@ -9,8 +10,7 @@
     margin-top: 32px;
 
     @media (max-width: 520px) {
-    margin-top: auto;
+      margin-top: auto;
     }
   }
 }
-

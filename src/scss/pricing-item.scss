@@ -1,11 +1,13 @@
 .pricing-item {
-  width: calc((100% - 100px) / 3);
   box-sizing: border-box;
+  width: calc((100% - 100px) / 3);
   padding: 1.5rem;
+
   border-radius: 1rem;
 
   @media (max-width: 830px) {
     width: 50%;
+
     @include centred;
   }
 
@@ -19,18 +21,23 @@
 
   .pricing-value {
     margin-bottom: 24px;
+
     line-height: 1em;
+
     @extend .text-7;
 
     span {
       vertical-align: super;
+
       @include uppercase;
     }
   }
 
   a {
     display: block;
+
     @extend %reset-a;
+
     @include border-1;
     @include full-width;
   }
@@ -38,6 +45,7 @@
   .pricing-footer {
     margin-top: 64px;
     margin-bottom: 42px;
+
     @extend .text-small;
   }
 }

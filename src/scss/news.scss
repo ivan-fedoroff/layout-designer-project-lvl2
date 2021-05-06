@@ -15,7 +15,7 @@
     @media (max-width: 520px) {
       @include full-width;
     }
-  
+
     img {
       @include full-width;
     }
@@ -23,6 +23,7 @@
 
   article {
     width: calc(100% - 575px - 50px);
+
     text-align: left;
 
     @media (max-width: 1240px) {
@@ -37,18 +38,19 @@
       text-transform: capitalize;
     }
 
-    &>p {
+    & > p {
       margin-top: 30px;
     }
 
     .author {
-      margin-bottom: 32px;
-      @extend %gap-16;
       width: fit-content;
+      margin-bottom: 32px;
+
+      @extend %gap-16;
 
       img {
-        height: 19px;
         width: 19px;
+        height: 19px;
       }
     }
 
