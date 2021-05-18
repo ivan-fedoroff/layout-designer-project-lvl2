@@ -1,11 +1,11 @@
-#page-popular-track {
+/*#page-popular-track {
   @extend %top-100;
-}
+}*/
 
 .tracks {
   @include gap-50;
   @include row-gap-25;
-  margin-top: 3rem;
+  //margin-top: 3rem;
 
   column-width: calc((100% - 50px) / 2);
 

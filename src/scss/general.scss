@@ -1,6 +1,6 @@
-%top-100 {
+/*%top-100 {
   padding-top: 100px;
-}
+}*/
 
 @mixin main-padding {
   padding-right: 7%;
@@ -63,13 +63,17 @@ body {
   @include reset;
 }
 
-/*.main-sections {
+.main-sections {
   padding-top: 100px;
+
+  h2 {
+    margin-bottom: 3rem;
+  }
 
   &.last-sections {
     padding-bottom: 100px;
   }
-}*/
+}
 
 header,
 section,

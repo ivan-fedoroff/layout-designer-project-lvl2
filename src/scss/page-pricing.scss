@@ -1,9 +1,9 @@
-#page-pricing {
-  @extend %top-100;
+/*#page-pricing {
+  @extend %top-100;*/
 
   .prices {
     @include gap-50;
-    margin-top: 49px;
+    //margin-top: 49px;
     margin-bottom: 40px;
 
     .bg-free {
@@ -28,4 +28,4 @@
   .info {
     @include reset;
   }
-}
+//}

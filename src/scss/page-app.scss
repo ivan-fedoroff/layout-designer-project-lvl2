@@ -1,13 +1,13 @@
-#page-app {
-  @extend %top-100;
+/*#page-app {
+  @extend %top-100;*/
 
   .container {
     .app-info {
       flex-direction: row-reverse;
       gap: 144px;
       justify-content: start;
-      margin-top: 48px;
-      margin-bottom: 100px;
+      //margin-top: 48px;
+      //margin-bottom: 100px;
 
       @media (max-width: 1240px) {
         @include gap-24;
@@ -44,4 +44,4 @@
       }
     }
   }
-}
+//}

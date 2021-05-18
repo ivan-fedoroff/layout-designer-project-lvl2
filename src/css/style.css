@@ -96,11 +96,9 @@ h3 {
   background: #95390c;
 }
 
-#page-discography,
-#page-similar, #page-popular-track, #page-app, #page-news, #page-pricing {
+/*%top-100 {
   padding-top: 100px;
-}
-
+}*/
 header .container,
 section .container,
 footer .container {
@@ -121,6 +119,16 @@ body {
   margin: 0;
   padding: 0;
   border: none;
+}
+
+.main-sections {
+  padding-top: 100px;
+}
+.main-sections h2 {
+  margin-bottom: 3rem;
+}
+.main-sections.last-sections {
+  padding-bottom: 100px;
 }
 
 .text-align-center {
@@ -269,6 +277,7 @@ header .hat input {
   width: 248px;
   height: 25px;
   padding: 5px 10px;
+  box-sizing: border-box;
   background: #3c3b3d;
   border-radius: 50px;
 }
@@ -328,27 +337,29 @@ form button {
   background: #34c176;
 }
 
-#page-pricing .prices {
+/*#page-pricing {
+  @extend %top-100;*/
+.prices {
   gap: 50px;
-  margin-top: 49px;
   margin-bottom: 40px;
 }
-#page-pricing .prices .bg-free {
+.prices .bg-free {
   background-image: url("../images/subscribe_1.png");
   background-position: center;
   background-size: cover;
 }
-#page-pricing .prices .bg-standart {
+.prices .bg-standart {
   background-image: url("../images/subscribe_2.png");
   background-position: center;
   background-size: cover;
 }
-#page-pricing .prices .bg-premium {
+.prices .bg-premium {
   background-image: url("../images/subscribe_3.png");
   background-position: center;
   background-size: cover;
 }
-#page-pricing .info {
+
+.info {
   margin: 0;
   padding: 0;
   border: none;
@@ -372,6 +383,7 @@ form button {
   }
 }
 .pricing-item h3 {
+  line-height: 36px;
   margin-bottom: 200px;
 }
 .pricing-item .pricing-value {
@@ -393,11 +405,13 @@ form button {
   margin-bottom: 42px;
 }
 
-#page-news .first {
-  margin-top: 48px;
+/*#page-news {
+  @extend %top-100;*/
+.first {
   margin-bottom: 65px;
 }
-#page-news .second {
+
+.second {
   flex-direction: row-reverse;
 }
 
@@ -440,6 +454,7 @@ form button {
   }
 }
 .news article h3 {
+  font-size: 30px;
   text-transform: capitalize;
 }
 .news article > p {
@@ -456,43 +471,45 @@ form button {
 .news article button {
   border: 1px solid #fff;
   text-transform: uppercase;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-#page-app .conteiner .app-info {
+/*#page-app {
+  @extend %top-100;*/
+.container .app-info {
   flex-direction: row-reverse;
   gap: 144px;
   justify-content: start;
-  margin-top: 48px;
-  margin-bottom: 100px;
 }
 @media (max-width: 1240px) {
-  #page-app .conteiner .app-info {
+  .container .app-info {
     gap: 24px;
   }
 }
 @media (max-width: 830px) {
-  #page-app .conteiner .app-info {
+  .container .app-info {
     gap: 0;
   }
-  #page-app .conteiner .app-info img {
+  .container .app-info img {
     margin: 0 auto;
   }
 }
 @media (max-width: 520px) {
-  #page-app .conteiner .app-info img {
+  .container .app-info img {
     width: 100%;
   }
 }
-#page-app .conteiner .app-info article {
+.container .app-info article {
   width: 50%;
   text-align: left;
 }
 @media (max-width: 830px) {
-  #page-app .conteiner .app-info article {
+  .container .app-info article {
     width: 100%;
   }
 }
-#page-app .conteiner .app-info .btn-ellipse {
+.container .app-info .btn-ellipse {
   padding: 16px 40px;
   border-radius: 32px;
 }
@@ -539,14 +556,15 @@ footer a {
 }
 
 .morten-harket {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 250px;
+  padding-bottom: 223px;
   background-image: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;
 }
 
 .two-button {
+  margin-top: 3rem;
   gap: 24px;
 }
 .two-button button {
@@ -567,10 +585,12 @@ footer a {
   filter: invert(100%);
 }
 
+/*#page-popular-track {
+  @extend %top-100;
+}*/
 .tracks {
   gap: 50px;
   row-gap: 25px;
-  margin-top: 3rem;
   column-width: calc((100% - 50px) / 2);
 }
 @media (max-width: 520px) {
@@ -598,14 +618,6 @@ footer a {
   padding: 0;
   border: none;
   text-transform: capitalize;
-}
-
-#page-similar {
-  margin-bottom: 100px;
-}
-
-.cards {
-  margin-top: 3rem;
 }
 
 .card img {
