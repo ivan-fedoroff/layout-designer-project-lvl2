@@ -19,20 +19,18 @@
   h3 {
     margin-bottom: 200px;
 
-    line-height: 36px;
-
     @media (max-width: 600px) {
       margin-bottom: 180px;
     }
   }
 
   .pricing-value {
-    margin-bottom: 24px;
+    @extend .text-7;
+    @include reset;
+
+    margin-bottom: 40px;
 
     line-height: 1em;
-
-    @extend .text-7;
-
     span {
       vertical-align: super;
 

@@ -29,12 +29,12 @@ header {
           @include reset;
         }
 
-        @media (max-width: 830px) {
+        @media (max-width: 960px) {
           margin-right: 0;
         }
       }
 
-      @media (max-width: 830px) {
+      @media (max-width: 960px) {
         @include full-width;
       }
 
@@ -47,8 +47,8 @@ header {
           @extend %reset-a;
         }
 
-        @media (max-width: 520px) {
-          @include no-gap;
+        @media (max-width: 600px) {
+          gap: 3px;
           @include full-width;
 
           a {

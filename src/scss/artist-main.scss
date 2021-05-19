@@ -1,18 +1,23 @@
 .morten-harket {
-  padding-top: 250px;
-  padding-bottom: 223px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   background-image: url('../images/Morten\ Harket.png');
   background-position: center;
   background-size: cover;
 
-  @media (max-width: 600px) {
-    padding-top: 225px;
+  h1 {
+    margin-top: 50px;
+
+    @media (max-width: 600px) {
+      margin-top: 25px;
+    }
   }
 }
 
 .two-button {
   margin-top: 3rem;
+  margin-bottom: 23px;
 
   @include gap-24;
 

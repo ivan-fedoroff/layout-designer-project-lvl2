@@ -6,8 +6,10 @@
   background-position: center;
   background-size: cover;
 
-  @media (max-width: 600px) {
-    padding-top: 250px;
+  h1 {
+    @media (max-width: 600px) {
+      margin-top: 50px;
+    }
   }
 
   p {
