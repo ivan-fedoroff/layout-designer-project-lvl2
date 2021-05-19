@@ -5,19 +5,25 @@
 
   border-radius: 1rem;
 
-  @media (max-width: 830px) {
-    width: 50%;
+  @media (max-width: 960px) {
+    width: 70%;
+    padding: 18px;
 
     @include centred;
   }
 
-  @media (max-width: 520px) {
+  @media (max-width: 600px) {
     width: 100%;
   }
 
   h3 {
-    line-height: 36px;
     margin-bottom: 200px;
+
+    line-height: 36px;
+
+    @media (max-width: 600px) {
+      margin-bottom: 180px;
+    }
   }
 
   .pricing-value {

@@ -60,22 +60,22 @@ header {
 
     input {
       @include reset;
+      box-sizing: border-box;
       width: 248px;
       height: 25px;
       padding: 5px 10px;
-      box-sizing: border-box;
 
       background: $dark;
 
       border-radius: 50px;
 
-      @media (max-width: 830px) {
+      @media (max-width: 960px) {
         @include full-width;
       }
 
       &::placeholder {
         color: #757575;
-        font: 13, 3px/15px Arial, sans-serif;
+        font: 13px/15px Arial, sans-serif;
 
         @include uppercase;
       }

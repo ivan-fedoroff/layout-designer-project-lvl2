@@ -1,12 +1,3 @@
-/*%top-100 {
-  padding-top: 100px;
-}*/
-
-@mixin main-padding {
-  padding-right: 7%;
-  padding-left: 7%;
-}
-
 @mixin mobil-padding {
   padding-right: 20px;
   padding-left: 20px;
@@ -63,6 +54,12 @@ body {
   @include reset;
 }
 
+h1,
+h2,
+h3 {
+  @include reset;
+}
+
 .main-sections {
   padding-top: 100px;
 
@@ -78,7 +75,6 @@ body {
 header,
 section,
 footer {
-
   .container {
     @extend %width-1200;
     @extend %centred;
@@ -91,9 +87,8 @@ footer {
 
 @media (max-width: 1240px) {
   header,
-  section,
-  footer {
-    @include main-padding;
+  section {
+    @include mobil-padding;
 
     .container {
       @include full-width;
@@ -101,10 +96,9 @@ footer {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   header,
-  section,
-  footer {
+  section {
     @include mobil-padding;
   }
 }
@@ -139,33 +133,23 @@ footer {
   border-radius: 5px;
 }
 
-h1,
-h2,
-h3 {
-  @include reset;
-}
-
 .grid-2-3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  @media (max-width: 520px) {
+  @media (max-width: 600px) {
     grid-template-columns: 1fr;
   }
 }
 
 .grid-4-2 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, 251px);
 
   @include gap-50;
   @include row-gap-25;
 
-  @media (max-width: 1240px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media (max-width: 520px) {
-    grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 960px) {
+    grid-template-columns: repeat(auto-fill, 138px);
   }
 }

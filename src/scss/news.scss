@@ -8,11 +8,11 @@
       width: 50%;
     }
 
-    @media (max-width: 830px) {
+    @media (max-width: 960px) {
       width: 575px;
     }
 
-    @media (max-width: 520px) {
+    @media (max-width: 600px) {
       @include full-width;
     }
 
@@ -30,17 +30,25 @@
       width: calc(50% - 50px);
     }
 
-    @media (max-width: 830px) {
+    @media (max-width: 960px) {
       width: 575px;
     }
 
     h3 {
-      font-size: 30px;
+      font: 400 30px/1.5 'Roboto', sans-serif;
       text-transform: capitalize;
+
+      @media (max-width: 600px) {
+        font-size: 16px;
+      }
     }
 
     & > p {
       margin-top: 30px;
+
+      @media (max-width: 600px) {
+        margin-top: 18px;
+      }
     }
 
     .author {

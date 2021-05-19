@@ -1,15 +1,18 @@
 @font-face {
+  font-weight: 400;
   font-family: 'Roboto';
   src: url(../fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Roboto-Bold';
+  font-weight: 700;
+  font-family: 'Roboto';
   src: url(../fonts/Roboto-Bold.ttf);
 }
 
 @font-face {
-  font-family: 'Roboto-Medium';
+  font-weight: 500;
+  font-family: 'Roboto';
   src: url(../fonts/Roboto-Medium.ttf);
 }
 
@@ -24,7 +27,7 @@ $red: #95390c;
 
 body {
   color: $dark-gray;
-  font: 16px/1.5 'Roboto', sans-serif;
+  font: 400 16px/1.5 'Roboto', sans-serif;
 
   background: $black;
 }
@@ -34,7 +37,8 @@ body {
 }
 
 @mixin h-style {
-  font-family: 'Roboto-Bold', sans-serif;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 
   @include uppercase;
 }
@@ -50,7 +54,7 @@ h1 {
 
   @include h-style;
 
-  @media (max-width: 830px) {
+  @media (max-width: 960px) {
     font-size: 30px;
     line-height: 45px;
   }
@@ -62,18 +66,18 @@ h2 {
 
   @include h-style;
 
-  @media (max-width: 830px) {
+  @media (max-width: 960px) {
     font-size: 18px;
     line-height: 27px;
   }
 }
 
 h3 {
-  font: 24px/45px 'Roboto', sans-serif;
+  font: 400 24px/45px 'Roboto', sans-serif;
 
   @include uppercase;
 
-  @media (max-width: 830px) {
+  @media (max-width: 960px) {
     font-size: 16px;
     line-height: 24px;
 

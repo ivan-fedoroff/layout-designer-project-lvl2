@@ -2,16 +2,16 @@
   img {
     width: 250px;
     height: 250px;
-    margin-bottom: 15px;
+    margin-bottom: 11.5px;
 
-    @media (max-width: 830px) {
+    @media (max-width: 960px) {
       width: 137px;
       height: 137px;
     }
   }
 
   h3 {
-    font: 18px/27px 'Roboto-Bold', sans-serif;
+    font: 700 18px/27px 'Roboto', sans-serif;
     text-transform: capitalize;
   }
 
@@ -26,7 +26,7 @@
 
   text-align: center;
 
-  @media (max-width: 830px) {
+  @media (max-width: 960px) {
     width: 137px;
   }
 }

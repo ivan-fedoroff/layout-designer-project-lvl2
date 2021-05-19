@@ -13,12 +13,12 @@ form {
     height: 50px;
     padding-left: 20px;
 
-    font: 14px/16px 'Roboto-Bold', sans-serif;
+    font: 700 14px/16px 'Roboto', sans-serif;
 
     border: 2px solid $dark-gray;
     border-radius: 3px;
 
-    @media (max-width: 520px) {
+    @media (max-width: 600px) {
       grid-column: span 2;
     }
   }
@@ -26,7 +26,7 @@ form {
   button {
     grid-column: span 2;
 
-    font: 13.3px/15px Arial, sans-serif;
+    font: 400 13.3px/15px Arial, sans-serif;
 
     @include uppercase;
     background: $green;

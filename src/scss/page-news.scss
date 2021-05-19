@@ -1,12 +1,7 @@
-/*#page-news {
-  @extend %top-100;*/
+.first {
+  margin-bottom: 65px;
+}
 
-  .first {
-    //margin-top: 48px;
-    margin-bottom: 65px;
-  }
-
-  .second {
-    flex-direction: row-reverse;
-  }
-//}
+.second {
+  flex-direction: row-reverse;
+}

@@ -6,26 +6,40 @@ footer {
   a {
     @extend %reset-a;
     display: block;
+    overflow-x: hidden;
   }
 }
 
 .first-foot {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 60px;
+  padding-bottom: 75px;
 
   .footer-1 {
-    height: 150px;
-
     column-count: 4;
 
+    @media (max-width: 960px) {
+      column-count: 2;
+    }
+
+    @media (max-width: 600px) {
+      column-count: 1;
+    }
+
+    div:first-child {
+      margin: 0;
+    }
+
     .column {
+
+      margin-top: 30px;
+
       column-width: 310px;
       break-inside: avoid;
 
       h2 {
         margin-bottom: 16px;
 
-        font: 18px/27px 'Roboto-bold', sans-serif;
+        font: 700 18px/27px 'Roboto', sans-serif;
 
         @include uppercase;
       }
@@ -33,6 +47,10 @@ footer {
 
     .last-clmn {
       column-width: 240px;
+
+      @media (max-width: 600px) {
+        column-width: 310px;
+      }
 
       .soc-net-link {
         @include gap-24;
@@ -42,12 +60,17 @@ footer {
 }
 
 .last-foot {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-bottom: 48px;
 
   border-top: 1px solid $gray;
 
   .footer-2 {
     gap: 15px;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
   }
 }

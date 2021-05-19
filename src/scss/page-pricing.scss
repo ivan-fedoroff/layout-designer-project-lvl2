@@ -1,31 +1,26 @@
-/*#page-pricing {
-  @extend %top-100;*/
+.prices {
+  @include gap-50;
+  margin-bottom: 40px;
 
-  .prices {
-    @include gap-50;
-    //margin-top: 49px;
-    margin-bottom: 40px;
-
-    .bg-free {
-      background-image: url('../images/subscribe_1.png');
-      background-position: center;
-      background-size: cover;
-    }
-
-    .bg-standart {
-      background-image: url('../images/subscribe_2.png');
-      background-position: center;
-      background-size: cover;
-    }
-
-    .bg-premium {
-      background-image: url('../images/subscribe_3.png');
-      background-position: center;
-      background-size: cover;
-    }
+  .bg-free {
+    background-image: url('../images/subscribe_1.png');
+    background-position: center;
+    background-size: cover;
   }
 
-  .info {
-    @include reset;
+  .bg-standart {
+    background-image: url('../images/subscribe_2.png');
+    background-position: center;
+    background-size: cover;
   }
-//}
+
+  .bg-premium {
+    background-image: url('../images/subscribe_3.png');
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.info {
+  @include reset;
+}

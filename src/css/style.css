@@ -1,18 +1,21 @@
 @font-face {
+  font-weight: 400;
   font-family: "Roboto";
   src: url(../fonts/Roboto-Regular.ttf);
 }
 @font-face {
-  font-family: "Roboto-Bold";
+  font-weight: 700;
+  font-family: "Roboto";
   src: url(../fonts/Roboto-Bold.ttf);
 }
 @font-face {
-  font-family: "Roboto-Medium";
+  font-weight: 500;
+  font-family: "Roboto";
   src: url(../fonts/Roboto-Medium.ttf);
 }
 body {
   color: #cacaca;
-  font: 16px/1.5 "Roboto", sans-serif;
+  font: 400 16px/1.5 "Roboto", sans-serif;
   background: #08020d;
 }
 
@@ -24,10 +27,11 @@ footer a, .pricing-item a, header .hat .menu nav a {
 h1 {
   font-size: 60px;
   line-height: 90px;
-  font-family: "Roboto-Bold", sans-serif;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
 }
-@media (max-width: 830px) {
+@media (max-width: 960px) {
   h1 {
     font-size: 30px;
     line-height: 45px;
@@ -37,10 +41,11 @@ h1 {
 h2 {
   font-size: 38px;
   line-height: 57px;
-  font-family: "Roboto-Bold", sans-serif;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
 }
-@media (max-width: 830px) {
+@media (max-width: 960px) {
   h2 {
     font-size: 18px;
     line-height: 27px;
@@ -48,19 +53,20 @@ h2 {
 }
 
 h3 {
-  font: 24px/45px "Roboto", sans-serif;
+  font: 400 24px/45px "Roboto", sans-serif;
   text-transform: uppercase;
 }
-@media (max-width: 830px) {
+@media (max-width: 960px) {
   h3 {
     font-size: 16px;
     line-height: 24px;
-    font-family: "Roboto-Bold", sans-serif;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
   }
 }
 
-.text-small, .pricing-item .pricing-footer, .btn-red {
+.text-small, .popular-track, .pricing-item .pricing-footer, .btn-red {
   font-size: 12.8px;
 }
 
@@ -96,9 +102,6 @@ h3 {
   background: #95390c;
 }
 
-/*%top-100 {
-  padding-top: 100px;
-}*/
 header .container,
 section .container,
 footer .container {
@@ -121,6 +124,14 @@ body {
   border: none;
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .main-sections {
   padding-top: 100px;
 }
@@ -137,21 +148,18 @@ body {
 
 @media (max-width: 1240px) {
   header,
-section,
-footer {
-    padding-right: 7%;
-    padding-left: 7%;
+section {
+    padding-right: 20px;
+    padding-left: 20px;
   }
   header .container,
-section .container,
-footer .container {
+section .container {
     width: 100%;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   header,
-section,
-footer {
+section {
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -184,19 +192,11 @@ footer {
   border-radius: 5px;
 }
 
-h1,
-h2,
-h3 {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
 .grid-2-3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   .grid-2-3 {
     grid-template-columns: 1fr;
   }
@@ -204,18 +204,13 @@ h3 {
 
 .grid-4-2 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, 251px);
   gap: 50px;
   row-gap: 25px;
 }
-@media (max-width: 1240px) {
+@media (max-width: 960px) {
   .grid-4-2 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 520px) {
-  .grid-4-2 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, 138px);
   }
 }
 
@@ -230,7 +225,8 @@ header .hat {
   line-height: 13px;
 }
 header .hat .menu .logo {
-  font-family: "Roboto-Bold", sans-serif;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   flex-wrap: nowrap;
   margin-right: 72px;
@@ -258,7 +254,8 @@ header .hat .menu nav {
   gap: 24px;
 }
 header .hat .menu nav a {
-  font-family: "Roboto-Bold", sans-serif;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
 }
 @media (max-width: 520px) {
@@ -274,21 +271,21 @@ header .hat input {
   margin: 0;
   padding: 0;
   border: none;
+  box-sizing: border-box;
   width: 248px;
   height: 25px;
   padding: 5px 10px;
-  box-sizing: border-box;
   background: #3c3b3d;
   border-radius: 50px;
 }
-@media (max-width: 830px) {
+@media (max-width: 960px) {
   header .hat input {
     width: 100%;
   }
 }
 header .hat input::placeholder {
   color: #757575;
-  font: 13, 3px/15px Arial, sans-serif;
+  font: 13px/15px Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -299,12 +296,17 @@ header .hat input::placeholder {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 600px) {
+  .banner {
+    padding-top: 250px;
+  }
+}
 .banner p {
   margin-top: 32px;
 }
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   .banner p {
-    margin-top: auto;
+    margin-top: 1rem;
   }
 }
 
@@ -321,24 +323,22 @@ form input {
   min-width: 270px;
   height: 50px;
   padding-left: 20px;
-  font: 14px/16px "Roboto-Bold", sans-serif;
+  font: 700 14px/16px "Roboto", sans-serif;
   border: 2px solid #cacaca;
   border-radius: 3px;
 }
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   form input {
     grid-column: span 2;
   }
 }
 form button {
   grid-column: span 2;
-  font: 13.3px/15px Arial, sans-serif;
+  font: 400 13.3px/15px Arial, sans-serif;
   text-transform: uppercase;
   background: #34c176;
 }
 
-/*#page-pricing {
-  @extend %top-100;*/
 .prices {
   gap: 50px;
   margin-bottom: 40px;
@@ -371,20 +371,26 @@ form button {
   padding: 1.5rem;
   border-radius: 1rem;
 }
-@media (max-width: 830px) {
+@media (max-width: 960px) {
   .pricing-item {
-    width: 50%;
+    width: 70%;
+    padding: 18px;
     margin: 0 auto;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   .pricing-item {
     width: 100%;
   }
 }
 .pricing-item h3 {
-  line-height: 36px;
   margin-bottom: 200px;
+  line-height: 36px;
+}
+@media (max-width: 600px) {
+  .pricing-item h3 {
+    margin-bottom: 180px;
+  }
 }
 .pricing-item .pricing-value {
   margin-bottom: 24px;
@@ -405,8 +411,6 @@ form button {
   margin-bottom: 42px;
 }
 
-/*#page-news {
-  @extend %top-100;*/
 .first {
   margin-bottom: 65px;
 }
@@ -426,12 +430,12 @@ form button {
     width: 50%;
   }
 }
-@media (max-width: 830px) {
+@media (max-width: 960px) {
   .news .picture {
     width: 575px;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   .news .picture {
     width: 100%;
   }
@@ -448,17 +452,27 @@ form button {
     width: calc(50% - 50px);
   }
 }
-@media (max-width: 830px) {
+@media (max-width: 960px) {
   .news article {
     width: 575px;
   }
 }
 .news article h3 {
-  font-size: 30px;
+  font: 400 30px/1.5 "Roboto", sans-serif;
   text-transform: capitalize;
+}
+@media (max-width: 600px) {
+  .news article h3 {
+    font-size: 16px;
+  }
 }
 .news article > p {
   margin-top: 30px;
+}
+@media (max-width: 600px) {
+  .news article > p {
+    margin-top: 18px;
+  }
 }
 .news article .author {
   width: fit-content;
@@ -475,8 +489,6 @@ form button {
   padding-bottom: 16px;
 }
 
-/*#page-app {
-  @extend %top-100;*/
 .container .app-info {
   flex-direction: row-reverse;
   gap: 144px;
@@ -484,10 +496,10 @@ form button {
 }
 @media (max-width: 1240px) {
   .container .app-info {
-    gap: 24px;
+    gap: 12%;
   }
 }
-@media (max-width: 830px) {
+@media (max-width: 960px) {
   .container .app-info {
     gap: 0;
   }
@@ -495,16 +507,11 @@ form button {
     margin: 0 auto;
   }
 }
-@media (max-width: 520px) {
-  .container .app-info img {
-    width: 100%;
-  }
-}
 .container .app-info article {
   width: 50%;
   text-align: left;
 }
-@media (max-width: 830px) {
+@media (max-width: 960px) {
   .container .app-info article {
     width: 100%;
   }
@@ -520,39 +527,64 @@ form button {
 
 footer a {
   display: block;
+  overflow-x: hidden;
 }
 
 .first-foot {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 60px;
+  padding-bottom: 75px;
 }
 .first-foot .footer-1 {
-  height: 150px;
   column-count: 4;
 }
+@media (max-width: 960px) {
+  .first-foot .footer-1 {
+    column-count: 2;
+  }
+}
+@media (max-width: 600px) {
+  .first-foot .footer-1 {
+    column-count: 1;
+  }
+}
+.first-foot .footer-1 div:first-child {
+  margin: 0;
+}
 .first-foot .footer-1 .column {
+  margin-top: 30px;
   column-width: 310px;
   break-inside: avoid;
 }
 .first-foot .footer-1 .column h2 {
   margin-bottom: 16px;
-  font: 18px/27px "Roboto-bold", sans-serif;
+  font: 700 18px/27px "Roboto", sans-serif;
   text-transform: uppercase;
 }
 .first-foot .footer-1 .last-clmn {
   column-width: 240px;
+}
+@media (max-width: 600px) {
+  .first-foot .footer-1 .last-clmn {
+    column-width: 310px;
+  }
 }
 .first-foot .footer-1 .last-clmn .soc-net-link {
   gap: 24px;
 }
 
 .last-foot {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-bottom: 48px;
   border-top: 1px solid #e0e0e0;
 }
 .last-foot .footer-2 {
   gap: 15px;
+}
+@media (max-width: 600px) {
+  .last-foot .footer-2 {
+    flex-direction: column;
+  }
 }
 
 .morten-harket {
@@ -561,6 +593,11 @@ footer a {
   background-image: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;
+}
+@media (max-width: 600px) {
+  .morten-harket {
+    padding-top: 225px;
+  }
 }
 
 .two-button {
@@ -585,15 +622,12 @@ footer a {
   filter: invert(100%);
 }
 
-/*#page-popular-track {
-  @extend %top-100;
-}*/
 .tracks {
   gap: 50px;
   row-gap: 25px;
   column-width: calc((100% - 50px) / 2);
 }
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   .tracks {
     width: 100%;
   }
@@ -611,7 +645,7 @@ footer a {
   width: 100%;
 }
 .popular-track .track-info h3 {
-  font: 12.8px/19.2px "Roboto-Bold", sans-serif;
+  font: 700 12.8px/19.2px "Roboto", sans-serif;
 }
 .popular-track .track-info p {
   margin: 0;
@@ -623,16 +657,16 @@ footer a {
 .card img {
   width: 250px;
   height: 250px;
-  margin-bottom: 15px;
+  margin-bottom: 11.5px;
 }
-@media (max-width: 830px) {
+@media (max-width: 960px) {
   .card img {
     width: 137px;
     height: 137px;
   }
 }
 .card h3 {
-  font: 18px/27px "Roboto-Bold", sans-serif;
+  font: 700 18px/27px "Roboto", sans-serif;
   text-transform: capitalize;
 }
 .card p {
@@ -645,7 +679,7 @@ footer a {
   width: 250px;
   text-align: center;
 }
-@media (max-width: 830px) {
+@media (max-width: 960px) {
   .artists {
     width: 137px;
   }
