@@ -372,7 +372,7 @@ form button {
 @media (max-width: 960px) {
   .pricing-item {
     width: 70%;
-    padding-top: 18px;
+    padding-top: 1rem;
     margin: 0 auto;
   }
 }
@@ -382,7 +382,7 @@ form button {
   }
 }
 .pricing-item h3 {
-  margin-bottom: 200px;
+  margin-bottom: 199px;
   line-height: 36px;
 }
 @media (max-width: 600px) {
@@ -415,7 +415,7 @@ form button {
 }
 
 .first {
-  margin-bottom: 65px;
+  margin-bottom: 64px;
 }
 
 .second {
@@ -427,7 +427,7 @@ form button {
 }
 @media (max-width: 600px) {
   .news {
-    gap: 48px;
+    gap: 46px;
   }
 }
 .news .picture {
