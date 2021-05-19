@@ -7,7 +7,7 @@
 
   @media (max-width: 960px) {
     width: 70%;
-    padding: 18px;
+    padding-top: 18px;
 
     @include centred;
   }
@@ -22,7 +22,7 @@
     line-height: 36px;
 
     @media (max-width: 600px) {
-      margin-bottom: 180px;
+      margin-bottom: 200px;
 
       line-height: 24px;
     }
@@ -37,6 +37,7 @@
     line-height: 1em;
     span {
       vertical-align: super;
+      line-height: 1em;
 
       @include uppercase;
     }

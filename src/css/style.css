@@ -372,7 +372,7 @@ form button {
 @media (max-width: 960px) {
   .pricing-item {
     width: 70%;
-    padding: 18px;
+    padding-top: 18px;
     margin: 0 auto;
   }
 }
@@ -387,7 +387,7 @@ form button {
 }
 @media (max-width: 600px) {
   .pricing-item h3 {
-    margin-bottom: 180px;
+    margin-bottom: 200px;
     line-height: 24px;
   }
 }
@@ -400,6 +400,7 @@ form button {
 }
 .pricing-item .pricing-value span {
   vertical-align: super;
+  line-height: 1em;
   text-transform: uppercase;
 }
 .pricing-item a {
@@ -444,7 +445,7 @@ form button {
 }
 @media (max-width: 600px) {
   .news .picture {
-    width: 100%;
+    width: 374px;
   }
 }
 .news .picture img {
@@ -479,7 +480,7 @@ form button {
 }
 @media (max-width: 600px) {
   .news article > p {
-    margin-top: 18px;
+    margin-top: 16px;
     margin-bottom: 23px;
   }
 }
