@@ -427,7 +427,7 @@ form button {
 }
 @media (max-width: 600px) {
   .news {
-    gap: 46px;
+    gap: 44px;
   }
 }
 .news .picture {
