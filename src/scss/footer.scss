@@ -5,13 +5,11 @@
 footer {
   a {
     @extend %reset-a;
-    display: block;
-    overflow-x: hidden;
   }
 }
 
 .first-foot {
-  padding-top: 60px;
+  padding-top: 62px;
   padding-bottom: 75px;
 
   .footer-1 {
@@ -25,7 +23,7 @@ footer {
       column-count: 1;
     }
 
-    div:first-child {
+    ul:first-child {
       margin: 0;
     }
 
@@ -54,6 +52,14 @@ footer {
 
       .soc-net-link {
         @include gap-24;
+        
+        a {
+          line-height: 1.4rem;
+
+          img {
+            vertical-align: middle;
+          }
+        }
       }
     }
   }
@@ -61,13 +67,13 @@ footer {
 
 .last-foot {
   box-sizing: border-box;
-  padding-top: 40px;
+  padding-top: 39px;
   padding-bottom: 48px;
 
   border-top: 1px solid $gray;
 
   .footer-2 {
-    gap: 15px;
+    gap: 15.5px;
 
     @media (max-width: 600px) {
       flex-direction: column;

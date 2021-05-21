@@ -60,6 +60,10 @@ h3 {
   @include reset;
 }
 
+ul {
+  @include reset;
+}
+
 .main-sections {
   padding-top: 100px;
 
@@ -73,8 +77,7 @@ h3 {
 }
 
 header,
-section,
-footer {
+section {
   .container {
     @extend %width-1200;
     @extend %centred;

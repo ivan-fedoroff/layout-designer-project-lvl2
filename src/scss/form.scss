@@ -26,7 +26,7 @@ form {
   button {
     grid-column: span 2;
 
-    font: 400 13.3px/15px Arial, sans-serif;
+    font: 400 13.3px/16px Arial, sans-serif;
 
     @include uppercase;
     background: $green;
