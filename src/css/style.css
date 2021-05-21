@@ -147,8 +147,8 @@ ul {
 }
 
 .main-sections {
-  padding-top: 100px;
   width: 1240px;
+  padding-top: 100px;
 }
 .main-sections h2 {
   margin-bottom: 3rem;
@@ -278,8 +278,8 @@ header .hat .menu ul a {
 }
 @media (max-width: 600px) {
   header .hat .menu ul {
-    gap: 3px;
     flex-direction: column;
+    gap: 3px;
     padding: 1px 0;
   }
 }
@@ -415,8 +415,8 @@ form button {
   line-height: 1em;
 }
 .pricing-item .pricing-value span {
-  vertical-align: super;
   line-height: 1em;
+  vertical-align: super;
   text-transform: uppercase;
 }
 .pricing-item a {
@@ -594,8 +594,8 @@ form button {
 }
 @media (max-width: 600px) {
   .last-foot .footer-2 {
-    width: 97%;
     flex-direction: column;
+    width: 97%;
   }
 }
 
