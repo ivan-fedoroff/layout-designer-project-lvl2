@@ -106,12 +106,14 @@ li {
 }
 
 header .container,
-section .container {
+section .container,
+.last-foot .container {
   width: 1200px;
 }
 
 form, header .container,
-section .container, .main-sections {
+section .container,
+.last-foot .container, .main-sections {
   margin: 0 auto;
 }
 
@@ -139,6 +141,11 @@ ul {
   border: none;
 }
 
+.first-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .main-sections {
   padding-top: 100px;
   width: 1240px;
@@ -160,20 +167,15 @@ ul {
   }
 
   header,
-section {
+section,
+.last-foot {
     padding-right: 20px;
     padding-left: 20px;
   }
   header .container,
-section .container {
+section .container,
+.last-foot .container {
     width: 100%;
-  }
-}
-@media (max-width: 600px) {
-  header,
-section {
-    padding-right: 20px;
-    padding-left: 20px;
   }
 }
 .flex {
@@ -304,8 +306,6 @@ header .hat input::placeholder {
 }
 
 .banner {
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
@@ -530,12 +530,12 @@ form button {
     margin: 0 auto;
   }
 }
-.container .app-info article {
+.container .app-info .app-offer {
   width: 50%;
   text-align: left;
 }
 @media (max-width: 960px) {
-  .container .app-info article {
+  .container .app-info .app-offer {
     width: 100%;
   }
 }
@@ -600,8 +600,6 @@ form button {
 }
 
 .morten-harket {
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-image: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;
