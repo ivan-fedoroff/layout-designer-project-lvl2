@@ -50,8 +50,8 @@ header {
         }
 
         @media (max-width: 600px) {
-          gap: 3px;
           flex-direction: column;
+          gap: 3px;
           padding: 1px 0;
         }
       }

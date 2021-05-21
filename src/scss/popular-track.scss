@@ -12,8 +12,9 @@
 .popular-track {
   grid-column: span 1;
   gap: 15px;
+
   @extend .text-small;
-  
+
   img {
     width: 55px;
     height: 55px;

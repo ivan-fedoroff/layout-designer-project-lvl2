@@ -64,9 +64,15 @@ ul {
   @include reset;
 }
 
+.first-sections {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .main-sections {
-  padding-top: 100px;
   width: 1240px;
+  padding-top: 100px;
+
   @extend %centred;
 
   h2 {
@@ -79,7 +85,8 @@ ul {
 }
 
 header,
-section {
+section,
+.last-foot {
   .container {
     @extend %width-1200;
     @extend %centred;
