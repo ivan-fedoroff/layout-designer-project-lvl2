@@ -63,7 +63,8 @@ h3 {
   }
 }
 
-ul {
+ul,
+li {
   list-style-type: none;
 }
 
@@ -522,7 +523,7 @@ form button {
 .container .app-info {
   flex-direction: row-reverse;
   gap: 144px;
-  justify-content: start;
+  justify-content: flex-end;
 }
 @media (max-width: 1240px) {
   .container .app-info {
@@ -585,8 +586,8 @@ form button {
   font: 700 18px/27px "Roboto", sans-serif;
   text-transform: uppercase;
 }
-.first-foot .footer-1 .column .trick {
-  display: block;
+.first-foot .footer-1 .column > * {
+  width: 95%;
 }
 .first-foot .footer-1 .last-clmn {
   column-width: 240px;

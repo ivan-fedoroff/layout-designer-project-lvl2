@@ -42,8 +42,8 @@ footer {
         @include uppercase;
       }
 
-      .trick {
-        display: block;
+      & > * {
+        width: 95%;
       }
     }
 
