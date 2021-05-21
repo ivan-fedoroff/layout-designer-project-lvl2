@@ -37,7 +37,7 @@ footer {
 
     .soc-net-link {
       @include gap-24;
-
+      
       a {
         line-height: 1.4rem;
 
@@ -60,8 +60,8 @@ footer {
     gap: 16px;
 
     @media (max-width: 600px) {
-      flex-direction: column;
       width: 97%;
+      flex-direction: column;
     }
   }
 }

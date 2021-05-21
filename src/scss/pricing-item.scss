@@ -30,16 +30,14 @@
 
   .pricing-value {
     @extend .text-7;
-
     @include reset;
 
     margin-bottom: 40px;
 
     line-height: 1em;
-
     span {
-      line-height: 1em;
       vertical-align: super;
+      line-height: 1em;
 
       @include uppercase;
     }

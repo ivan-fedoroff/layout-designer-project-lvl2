@@ -1,11 +1,7 @@
 node_modules
 
-.gitignore
 .htmlhintrc
 .stylelintrc.yaml
 .surgeignore
-
-Makefile
-package-lock.json
 
 src/CNAME
