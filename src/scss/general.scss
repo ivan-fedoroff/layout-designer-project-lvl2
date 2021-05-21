@@ -66,6 +66,8 @@ ul {
 
 .main-sections {
   padding-top: 100px;
+  width: 1240px;
+  @extend %centred;
 
   h2 {
     margin-bottom: 3rem;
@@ -89,6 +91,10 @@ section {
 }
 
 @media (max-width: 1240px) {
+  .main-sections {
+    width: auto;
+  }
+
   header,
   section {
     @include mobil-padding;

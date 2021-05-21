@@ -110,7 +110,7 @@ section .container {
 }
 
 form, header .container,
-section .container {
+section .container, .main-sections {
   margin: 0 auto;
 }
 
@@ -140,6 +140,7 @@ ul {
 
 .main-sections {
   padding-top: 100px;
+  width: 1240px;
 }
 .main-sections h2 {
   margin-bottom: 3rem;
@@ -153,6 +154,10 @@ ul {
 }
 
 @media (max-width: 1240px) {
+  .main-sections {
+    width: auto;
+  }
+
   header,
 section {
     padding-right: 20px;
@@ -580,6 +585,9 @@ form button {
   font: 700 18px/27px "Roboto", sans-serif;
   text-transform: uppercase;
 }
+.first-foot .footer-1 .column .trick {
+  display: block;
+}
 .first-foot .footer-1 .last-clmn {
   column-width: 240px;
 }
@@ -609,6 +617,7 @@ form button {
 }
 @media (max-width: 600px) {
   .last-foot .footer-2 {
+    width: 95%;
     flex-direction: column;
   }
 }

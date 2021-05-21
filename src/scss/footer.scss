@@ -41,6 +41,10 @@ footer {
 
         @include uppercase;
       }
+
+      .trick {
+        display: block;
+      }
     }
 
     .last-clmn {
@@ -76,6 +80,7 @@ footer {
     gap: 15.5px;
 
     @media (max-width: 600px) {
+      width: 95%;
       flex-direction: column;
     }
   }
