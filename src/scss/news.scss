@@ -1,11 +1,7 @@
 .news {
   @include gap-50;
 
-  @media (max-width: 600px) {
-    gap: 44px;
-  }
-
-  .picture {
+  img {
     width: 575px;
 
     @media (max-width: 1240px) {
@@ -18,10 +14,6 @@
 
     @media (max-width: 600px) {
       width: 374px;
-    }
-
-    img {
-      @include full-width;
     }
   }
 

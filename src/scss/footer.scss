@@ -13,7 +13,8 @@ footer {
   padding-bottom: 75px;
 
   .footer-1 {
-    column-count: 4;
+    justify-content: flex-start;
+    gap: 30px;
 
     @media (max-width: 960px) {
       column-count: 2;
@@ -23,16 +24,8 @@ footer {
       column-count: 1;
     }
 
-    ul:first-child {
-      margin: 0;
-    }
-
     .column {
-
-      margin-top: 30px;
-
-      column-width: 310px;
-      break-inside: avoid;
+      width: 280px;
 
       h2 {
         margin-bottom: 16px;
@@ -42,16 +35,16 @@ footer {
         @include uppercase;
       }
 
-      & > * {
-        width: 95%;
+      p {
+        @include reset;
       }
     }
 
     .last-clmn {
-      column-width: 240px;
+      width: auto;
 
       @media (max-width: 600px) {
-        column-width: 310px;
+        width: 280px;
       }
 
       .soc-net-link {
